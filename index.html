@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/calc.svg">
+    <title>電卓</title>
+    <script src="js/calculate.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>電卓</h1>
+      <form id="calc-form">
+        <input type="text" class="inputBox" id="calc-input" readOnly/>
+        <table class="tableContent">
+        <tr>
+          <td><input type="button" class="calcBtn" value="1" onclick="pressedValue('1')"></td>
+          <td><input type="button" class="calcBtn" value="2" onclick="pressedValue('2')"></td>
+          <td><input type="button" class="calcBtn" value="3" onclick="pressedValue('3')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" class="calcBtn" value="4" onclick="pressedValue('4')"></td>
+          <td><input type="button" class="calcBtn" value="5" onclick="pressedValue('5')"></td>
+          <td><input type="button" class="calcBtn" value="6" onclick="pressedValue('6')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" class="calcBtn" value="7" onclick="pressedValue('7')"></td>
+          <td><input type="button" class="calcBtn" value="8" onclick="pressedValue('8')"></td>
+          <td><input type="button" class="calcBtn" value="9" onclick="pressedValue('9')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" class="calcBtn" value="0" onclick="pressedValue('0')"></td>
+        </tr>
+        </table>
+        <table class="tableContent">
+        <tr>
+          <td><input type="button" class="calcBtn" value="+" onclick="pressedValue('+')"></td>
+          <td><input type="button" class="calcBtn" value="-" onclick="pressedValue('-')"></td>
+          <td><input type="button" class="calcBtn" value="*" onclick="pressedValue('*')"></td>
+          <td><input type="button" class="calcBtn"  value="/" onclick="pressedValue('/')"></td>
+          <td><input type="button" class="calcBtn"  value="Clear" onclick="pressedValue('C')"></td>
+        </tr>
+        </table>
+        <input type="submit" id="calcBtn" value="計算" />
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
