@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // formのsubmit時の動作を定義する
   document.getElementById("calc-form").onsubmit = () => {
-    // コメントを入力するinputを取得する
+    // 計算式を入力するinputを取得する
     const formulaInput = document.getElementById("calc-input");
     formulaInput.value = eval(formulaInput.value);
     return false;
@@ -37,5 +37,3 @@ function isOper(letter) {
     return false;
   }
 }
-
-
